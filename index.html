@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Images/WhatsApp Image 2022-10-31 at 10.19.33 PM.jpeg">
+    <title>A Rahman Mon&Thur 4:7 PM</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Fixed Element -->
+    <div class="loading-screen">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <nav class="d-flex position-fixed">
+        <div class="nav-menu  d-flex flex-column justify-content-between">
+            <div class="nav-menu-links text-white">
+                <ul class="list-unstyled">
+                    <li id="search">Search</li>
+                    <li id="categories">Categories</li>
+                    <li id="area">Area</li>
+                    <li id="ingredients">Ingredients</li>
+                    <li id="contact">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-menu-foot">
+                <div class="nav-menu-foot-ancors">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="nav-menu-foot-caption">
+                    <span class="text-muted text-wrap">Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between align-items-center">
+            <div class="nav-header-logo text-center pt-4">
+                <img src="Images/asset 0.png" class="w-75 " alt="">
+            </div>
+            <div class="nav-header-mark">
+                <i id="openNav" class="fa-solid fa-align-justify  fs-3"></i>
+            </div>
+            <div class="nav-header-link d-flex flex-column pb-3">
+                <i class="fas fa-globe py-2"></i>
+                <i class="fas fa-share-alt py-2"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <div id="search-container" class="position-fixed w-75">
+            <div class="row px-3">
+                <div class="col-md-6">
+                    <input type="text" id="searchByName" class="form-control mb-2" placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="searchByFirstLetter" class="form-control mb-2"
+                        placeholder="Search By First Letter...">
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-center contact-inputs" id="contact-inputs">
+            <h2 class="text-white mb-5">Contac Us...</h2>
+            <div class="row contact-css">
+                <div class="col-md-6 ">
+                    <input id="userName" type="text" class="contact-style form-control w-100" placeholder="Enter Your Name">
+                    <div class="alert alertName mt-1 alert-danger ">
+                        Special Characters and Numbers not allowed
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input id="userEmail" type="text" class="contact-style form-control w-100" placeholder="Enter Email">
+                    <div class="alert alertEmail mt-1 alert-danger ">
+                        Enter valid email. *Ex: xxx@yyy.zzz
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input id="userPhone" type="text" class="contact-style form-control w-100" placeholder="Enter Phone">
+                    <div class="alert alertPhone mt-1 alert-danger ">
+                        It must be an Egyption valid phone number
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input id="userAge" type="text" class="contact-style form-control w-100" placeholder="Enter Age">
+                    <div class="alert alertAge mt-1 alert-danger ">
+                        Enter valid Age between 10-100 years
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input id="userPassword" type="password" class="contact-style form-control w-100" placeholder="Enter Password">
+                    <div class="alert alertPassword mt-1 alert-danger ">
+                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <input id="userRePassword" type="password" class="contact-style form-control w-100" placeholder="Enter RePassword">
+                    <div class="alert alertRePassword mt-1 alert-danger ">
+                        Enter valid Repassword
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline-danger mt-4" id="btn" disabled>submit</button>
+        </div>
+        <div class="container">
+            <div class="row g-4" id="rowData"></div>
+        </div>
+    </section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
